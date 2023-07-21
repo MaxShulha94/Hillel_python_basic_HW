@@ -1,22 +1,22 @@
 # Програма повинна виконувати прості математичні дії +,-, *, /.. Користувачу пропонується заздалегідь ввести числа
 # і математичну операцію над цими числами, програма, відповідно до дії, вираховує і висвітлює результат.
 
-# num1 = int(input('Enter first number: '))
-# num2 = int(input('Enter the second number: '))
-# action = input('Enter +,-,*,/: ')
-# result = int()
-# if action == '+':
-#     result = num1 + num2
-# elif action == '-':
-#     result = num1 - num2
-# elif action == '*':
-#     result = num1 * num2
-# else:
-#     if num1 and num2 != 0:
-#         result = num1 / num2
-#     else:
-#         print('ZeroDivisionError!')
-# print(result)
+num1 = int(input('Enter first number: '))
+num2 = int(input('Enter the second number: '))
+action = input('Enter +,-,*,/: ')
+result = int()
+if action == '+':
+    result = num1 + num2
+elif action == '-':
+    result = num1 - num2
+elif action == '*':
+    result = num1 * num2
+else:
+    if num1 and num2 != 0:
+        result = num1 / num2
+    else:
+        print('ZeroDivisionError!')
+print(result)
 
 # Ваша програма повинна перенести останній список елементів із кінця в початок, т.е. останній елемент списку повинен стати
 # першим. При цьому послідовність інших елементів не повинна змінюватися.
