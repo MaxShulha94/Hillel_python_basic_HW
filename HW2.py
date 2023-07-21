@@ -49,5 +49,5 @@ print(f'Name: {new_name}\nAge: {res}')
 #Завдання 7. Написати програму, що вираховує суму усіх цифр трьохзначного числа введеного корисувачем через input().
 
 numbers = input('Enter three numbers: ')
-sum_numbers = int(numbers[0]) + int(numbers[1]) + int(numbers[2])
-print(sum_numbers)
+# sum_numbers = int(numbers[0]) + int(numbers[1]) + int(numbers[2])
+# print(sum_numbers)
