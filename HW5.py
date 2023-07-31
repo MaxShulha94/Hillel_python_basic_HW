@@ -2,16 +2,18 @@
 # можуть зустрічатися ключі чи значення, які присутні в другому словнику, або навпаки. Наприклад, вміст словників може
 # бути наступний: a = {'x' : 1, 'y' : 2, 'z' : 3}, b = {'w' : 10, 'x' : 11, 'y' : 2}. Надрукуйте спільні ключі для обох
 # словників в одному рядку через пропуск.
-# a = {'x': 1, 'y': 2, 'z': 3}
-# b = {'w': 10, 'x': 11, 'y': 2}
-# res = {print(key, end=' ') for key in a if key in b}
+
+a = {'x': 1, 'y': 2, 'z': 3}
+b = {'w': 10, 'x': 11, 'y': 2}
+res = {print(key, end=' ') for key in a if key in b}
 
 # Напишіть програму, яка підраховує і роздруковує кількість появ кожного символу у введеному рядку.
-# my_string = input('Enter your string: ')
-# my_dict = {}
-# for i in my_string:
-#     my_dict[i] = my_string.count(i)
-# print(my_dict)
+
+my_string = input('Enter your string: ')
+my_dict = {}
+for i in my_string:
+    my_dict[i] = my_string.count(i)
+print(my_dict)
 
 
 # Вводиться число n, за яким слідують n рядків тексту. Напишіть програму, яка друкує всі слова, що зустрічаються в
