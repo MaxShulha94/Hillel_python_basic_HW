@@ -2,16 +2,16 @@
 # можуть зустрічатися ключі чи значення, які присутні в другому словнику, або навпаки. Наприклад, вміст словників може
 # бути наступний: a = {'x' : 1, 'y' : 2, 'z' : 3}, b = {'w' : 10, 'x' : 11, 'y' : 2}. Надрукуйте спільні ключі для обох
 # словників в одному рядку через пропуск.
-a = {'x': 1, 'y': 2, 'z': 3}
-b = {'w': 10, 'x': 11, 'y': 2}
-res = {print(key, end=' ') for key in a if key in b}
+# a = {'x': 1, 'y': 2, 'z': 3}
+# b = {'w': 10, 'x': 11, 'y': 2}
+# res = {print(key, end=' ') for key in a if key in b}
 
 # Напишіть програму, яка підраховує і роздруковує кількість появ кожного символу у введеному рядку.
-my_string = input('Enter your string: ')
-my_dict = {}
-for i in my_string:
-    my_dict[i] = my_string.count(i)
-print(my_dict)
+# my_string = input('Enter your string: ')
+# my_dict = {}
+# for i in my_string:
+#     my_dict[i] = my_string.count(i)
+# print(my_dict)
 
 
 # Вводиться число n, за яким слідують n рядків тексту. Напишіть програму, яка друкує всі слова, що зустрічаються в
@@ -22,22 +22,14 @@ print(my_dict)
 # частота зустрічальності слова і саме слово. Наприклад, [(2, 'hi'), (1, 'what'), (3, 'is')]. Тоді стандартне сортування
 # буде сортувати список кортежів, при цьому кортежі порівнюються по першому елементу, а якщо ці елементи
 # рівні - то по другому.
-enter_str = '''9
-hi
-hi
-what is your name
-my name is bond
-james bond
-my name is damme
-van damme
-claude van damme
-jean claude van damme'''
+
+num_str = int(input('Enter the number of strings: '))
+text = [input('Enter thr string: ') for i in range(num_str)]
+text = ' '.join(text).split()
 list_tuple = []
-max_count_number = int()
-enter_str = enter_str.split()
-for i in enter_str:
-    word = i
-    list_tuple.append((word, enter_str.count(i)))
+
+for i in text:
+     list_tuple.append((i, text.count(i)))
 list_tuple = list(set(list_tuple))
 for i in range(len(list_tuple)):
     for j in range(0, len(list_tuple)-i-1):
@@ -51,7 +43,6 @@ for i in range(1, len(list_tuple)):
         j -= 1
 for word, count in list_tuple:
     print(f'{word} {count}')
-
 
 
 
