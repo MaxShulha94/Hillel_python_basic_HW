@@ -10,3 +10,4 @@ car1 = {"Toyota", "Sedan", "Automatic", "Black"}
 car2 = {"Honda", "SUV", "Manual", "White"}
 res = car1.intersection(car2)
 print(res)
+
