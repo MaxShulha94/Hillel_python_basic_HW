@@ -13,3 +13,4 @@ class Godzilla:
             return f'Free space in my stomach equals {free_space}'
 g1 = Godzilla(100, 12)
 print(g1.eat_human())
+
